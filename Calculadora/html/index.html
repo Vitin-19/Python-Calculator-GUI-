@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../css/estilo.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <header>
+            <h1>Calculadora</h1>
+        </header>
+        <input type="text" id="cxtexto" /><br /><br />
+        <table>
+          <tr>
+            <td>
+              <input
+                type="submit"
+                value="C"
+                id="botao"
+                onclick="document.getElementById('cxtexto').value = '';"
+              />
+            </td>
+            <td>
+              <input
+                type="submit"
+                value="()"
+                id="botao"
+                onclick="text = document.getElementById('cxtexto').value; document.getElementById('cxtexto').value = text +'()'; text = '';"
+              />
+            </td>
+            <td>
+              <input
+                type="submit"
+                value="%"
+                id="botao"
+                onclick="text = document.getElementById('cxtexto').value; document.getElementById('cxtexto').value = text +'%'; text = '';"
+              />
+            </td>
+            <td>
+              <input
+                type="submit"
+                value="/"
+                id="botao"
+                onclick="text = document.getElementById('cxtexto').value; document.getElementById('cxtexto').value = text +'/'; text = '';"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="submit"
+                value="7"
+                id="botao"
+                onclick="text = document.getElementById('cxtexto').value; document.getElementById('cxtexto').value = text +'7'; text = '';"
+              />
+            </td>
+            <td>
+              <input
+                type="submit"
+                value="8"
+                id="botao"
+                onclick="text = document.getElementById('cxtexto').value; document.getElementById('cxtexto').value = text +'8'; text = '';"
+              />
+            </td>
+            <td>
+              <input
+                type="submit"
+                value="9"
+                id="botao"
+                onclick="text = document.getElementById('cxtexto').value; document.getElementById('cxtexto').value = text +'9'; text = '';"
+              />
+            </td>
+            <td>
+              <input
+                type="submit"
+                value="*"
+                id="botao"
+                onclick="text = document.getElementById('cxtexto').value; document.getElementById('cxtexto').value = text +'*'; text = '';"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="submit"
+                value="4"
+                id="botao"
+                onclick="text = document.getElementById('cxtexto').value; document.getElementById('cxtexto').value = text +'4'; text = '';"
+              />
+            </td>
+            <td>
+              <input
+                type="submit"
+                value="5"
+                id="botao"
+                onclick="text = document.getElementById('cxtexto').value; document.getElementById('cxtexto').value = text +'5'; text = '';"
+              />
+            </td>
+            <td>
+              <input
+                type="submit"
+                value="6"
+                id="botao"
+                onclick="text = document.getElementById('cxtexto').value; document.getElementById('cxtexto').value = text +'6'; text = '';"
+              />
+            </td>
+            <td>
+              <input
+                type="submit"
+                value="-"
+                id="botao"
+                onclick="text = document.getElementById('cxtexto').value; document.getElementById('cxtexto').value = text +'-'; text = '';"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="submit"
+                value="1"
+                id="botao"
+                onclick="text = document.getElementById('cxtexto').value; document.getElementById('cxtexto').value = text +'1'; text = '';"
+              />
+            </td>
+            <td>
+              <input
+                type="submit"
+                value="2"
+                id="botao"
+                onclick="text = document.getElementById('cxtexto').value; document.getElementById('cxtexto').value = text +'2'; text = '';"
+              />
+            </td>
+            <td>
+              <input
+                type="submit"
+                value="3"
+                id="botao"
+                onclick="text = document.getElementById('cxtexto').value; document.getElementById('cxtexto').value = text +'3'; text = '';"
+              />
+            </td>
+            <td>
+              <input
+                type="submit"
+                value="+"
+                id="botao"
+                onclick="text = document.getElementById('cxtexto').value; document.getElementById('cxtexto').value = text +'+'; text = '';"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="" id="botao" /></td>
+            <td>
+              <input
+                type="submit"
+                value="0"
+                id="botao"
+                onclick="text = document.getElementById('cxtexto').value; document.getElementById('cxtexto').value = text +'0'; text = '';"
+              />
+            </td>
+            <td>
+              <input
+                type="submit"
+                value="."
+                id="botao"
+                onclick="text = document.getElementById('cxtexto').value; document.getElementById('cxtexto').value = text +'.'; text = '';"
+              />
+            </td>
+            <td>
+              <input type="submit" value="=" id="botao" onclick="Calcular()" />
+            </td>
+          </tr>
+        </table>
+        <footer>
+            <p>Todos os direitos reservados: Vitor Paiva Nunes de Paula</p>
+        </footer>
+      </div>
+    </section>
+    <script>
+      let text;
+      function Calcular() {
+        text = document.getElementById("cxtexto").value;
+        document.getElementById("cxtexto").value = eval(text);
+        text = "";
+      }
+    </script>
+  </body>
+</html>
