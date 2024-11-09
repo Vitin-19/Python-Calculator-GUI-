@@ -23,9 +23,6 @@ app.title('Calculator')
 app.geometry('300x500')
 app.config(bg = '#14757F')
 
-labelForvisor = tk.Label(app, text = 'Calculator' )
-labelForvisor.config(bg='lightgray')
-
 visor = tk.Entry(app,font=('',15), width=25, bg='#FFF6BD')
 visor.grid(row=0,column=0, columnspan=4,padx=10, pady=10 )
 
