@@ -20,8 +20,11 @@ def clear():
     
 app = tk.Tk()
 app.title('Calculator')
-app.geometry('300x500')
+app.geometry('300x600')
 app.config(bg = '#14757F')
+
+labelForvisor = tk.Label(app, text = 'Calculator' )
+labelForvisor.config(bg='lightgray')
 
 visor = tk.Entry(app,font=('',15), width=25, bg='#FFF6BD')
 visor.grid(row=0,column=0, columnspan=4,padx=10, pady=10 )
@@ -31,7 +34,8 @@ Buttons = [
     ['1','2','3','C'],
     ['4','5','6','+'],
     ['7','8','9','-'],
-    ['*','0','/','=']
+    ['*','0','/','.'],
+    ['','**','%','=']
 ]
 
 
